@@ -1,3 +1,7 @@
 body {
-    background-image: url(https://cdn.psychologytoday.com/sites/default/files/field_blog_entry_images/sun-clouds-blue-sky-14641020076aM.jpg);
+    background: url("https://cdn.psychologytoday.com/sites/default/files/field_blog_entry_images/sun-clouds-blue-sky-14641020076aM.jpg") no-repeat;
+    background-size: cover;
+}
+.jumbotron{
+    margin: 10% 20%;
 }

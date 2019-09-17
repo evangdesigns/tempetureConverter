@@ -9,7 +9,26 @@
     <title>Temperature Converter</title>
 </head>
 <body>
-    <h1>Temperature Converter</h1>
+    <div class="jumbotron">
+        <h1 class="text-center">Temperature Converter</h1>
+        <form class="form-inline">
+            <div class="form-group mx-sm-3 mb-2">
+                <input type="text" class="form-control" id="input" placeholder="Temp to convert">
+            </div>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                    <input type="radio" name="degrees" id="F" autocomplete="off" checked> ℉
+                </label>
+                <label class="btn btn-outline-primary">
+                    <input type="radio" name="degrees" id="C" autocomplete="off"> ℃
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">CONVERT</button>
+        </form>
+    </div>
+    <!-- ADJUST WIDTH OF FORM FIELD -->
+    <!-- ADJUST SPACING OF F/C RADIOS -->
+    <!-- CENTER THE FORM -->
 <script src="main.js"></script>
 </body>
 </html>
