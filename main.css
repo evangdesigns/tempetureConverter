@@ -5,3 +5,6 @@ body {
 .jumbotron{
     margin: 10% 20%;
 }
+.btn-group-toggle{
+    margin: 0 20px 1px;
+}
