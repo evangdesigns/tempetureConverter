@@ -1,7 +1,7 @@
 # tempetureConverter
-# pixelArt
 
 ## Description
+This app allows you to enter a tempeture F or C and select it to be converted to the other.
 
 ## Screenshots
 ![Temp Coverter Preview](#)
