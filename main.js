@@ -1,10 +1,9 @@
 console.log('Temperture Converter');
-let temp = document.getElementById('temp').value
+let temp = document.getElementById('temp');
 
 const toCelsius = (temp) => {
-  let adjustment = (temp - 32) * (5 / 9);
-  // let converted = adjustment * (5 / 9);
-  converted = Math.round(adjustment * 100) / 100;
+  let adjustment = temp - 32 * (5 / 9);
+  converted = Math.round(adjustment);
   document.getElementById('tempResult').innerHTML = converted;
   if (converted > 32) {
     document.getElementById('tempResult').className = "hot";
@@ -16,9 +15,8 @@ const toCelsius = (temp) => {
 };
 
 const toFahrenheit = (temp) => {
-  let adjustment = (temp) * (9 / 5) + 32;
-  // let converted = adjustment ;
-  converted = Math.round(adjustment * 100) / 100;
+  let adjustment = temp * (9 / 5) + 32;
+  converted = Math.round(adjustment);
   document.getElementById('tempResult').innerHTML = converted;
   if (converted > 90) {
     document.getElementById('tempResult').className = "hot";
@@ -41,12 +39,12 @@ const convert = (temp) => {
 
 const init = () => {
   document.getElementById('convertBtn').addEventListener('click', () => {
-    convert(temp)
+    convert(temp.value)
   });
   document.getElementById('convertBtn').addEventListener('keyup', e => {
     if (e.keyCode == 13) {
       event.preventDefault();
-      convert(temp);
+      convert(temp.value);
     }
   });
   document.getElementById('clearBtn').addEventListener('click', () => {
