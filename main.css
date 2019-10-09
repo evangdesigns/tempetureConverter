@@ -1,7 +1,30 @@
 body {
-    background: url("https://cdn.psychologytoday.com/sites/default/files/field_blog_entry_images/sun-clouds-blue-sky-14641020076aM.jpg") no-repeat;
-    background-size: cover;
+    background: url("https://cdn.psychologytoday.com/sites/default/files/field_blog_entry_images/sun-clouds-blue-sky-14641020076aM.jpg");
+    background-repeat: no-repeat;
+    background-size: cover !important;
 }
 .jumbotron{
     margin: 10% 20%;
+}
+.btn-group-toggle{
+    margin: 0 20px 6px;
+}
+#clearBtn{
+    margin: 0 10px;
+}
+input[type=text] {
+    width: 150px !important;
+}
+#tempResult{
+    font-size: 150px;
+    text-align: center;
+}
+.cold {
+    color: #0b06c1;
+}
+.mild {
+    color:#4fc106;
+}
+.hot{
+    color:#c10606;
 }
